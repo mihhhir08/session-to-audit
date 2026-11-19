@@ -1,0 +1,598 @@
+{
+ "s2a_version": "0.2.1",
+ "note": "Aggregate results reported in the paper. No session content, commands, paths or tool names.",
+ "corpora": {
+  "CC": {
+   "sessions": 12,
+   "sessions_with_events": 10,
+   "events": 5608,
+   "events_per_session_median": 101.5,
+   "events_per_session_max": 2522,
+   "user_turns_total": 740,
+   "date_range": [
+    "2026-09-09",
+    "2026-11-12"
+   ],
+   "agent_versions": [
+    "2.1.136",
+    "2.1.266",
+    "2.1.285",
+    "2.1.309",
+    "2.1.312",
+    "2.1.314",
+    "None"
+   ],
+   "models": {
+    "claude-opus-5-5": 9,
+    "claude-fable-5-2": 2,
+    "claude-fable-5-1": 1,
+    "claude-opus-5": 1,
+    "claude-opus-4-7": 1
+   },
+   "distinct_tools": 33,
+   "kinds": {
+    "command": 3262,
+    "other": 754,
+    "read": 965,
+    "file_change": 499,
+    "network": 126,
+    "delegation": 2
+   },
+   "typed_coverage": 0.865549215406562,
+   "outcomes": {
+    "success": 5245,
+    "failure": 141,
+    "unknown": 222
+   },
+   "outcome_determinacy": 0.9604136947218259,
+   "failure_rate_of_determinate": 0.026178982547344968,
+   "file_changes": 499,
+   "diff_sources": {
+    "agent_structured_patch": 363,
+    "reconstructed_from_input": 136
+   },
+   "file_ops": {
+    "update": 85,
+    "create": 259,
+    "write": 85,
+    "edit": 70
+   },
+   "lines_added": 34406,
+   "lines_removed": 2821,
+   "code_mode": {
+    "propagated_redactions": 6
+   },
+   "via_code_mode_events": 0,
+   "code_mode_unknown": 0,
+   "rules": {
+    "R7": 421,
+    "R8": 215,
+    "R9": 152,
+    "R1": 121,
+    "R6": 28,
+    "R5": 8,
+    "R2": 6
+   },
+   "flagged_events": 890,
+   "high_risk_events": 135,
+   "sessions_with_any_flag": 9,
+   "raw_bytes": 491929283,
+   "html_bytes": 21858973,
+   "size_ratio_median_logs_over_50KB": 0.051703822771498736
+  },
+  "CX": {
+   "sessions": 52,
+   "sessions_with_events": 41,
+   "events": 6586,
+   "events_per_session_median": 16.5,
+   "events_per_session_max": 1054,
+   "user_turns_total": 762,
+   "date_range": [
+    "2026-05-05",
+    "2026-11-18"
+   ],
+   "agent_versions": [
+    "0.128.0-alpha.1",
+    "0.129.0-alpha.15",
+    "0.130.0-alpha.5",
+    "0.131.0-alpha.9",
+    "0.133.0-alpha.1",
+    "0.145.0-alpha.18",
+    "0.145.0-alpha.27",
+    "0.146.0-alpha.3.1",
+    "0.147.0-alpha.1.2",
+    "0.147.0-alpha.6.5",
+    "0.154.0-alpha.6.2",
+    "0.155.0-alpha.9.2",
+    "0.159.0"
+   ],
+   "models": {
+    "gpt-5.2": 1,
+    "gpt-5.5": 11,
+    "gpt-5.6-sol": 18,
+    "gpt-6-astra": 12,
+    "gpt-5.6-luna": 2,
+    "gpt-6.1-sol": 1,
+    "gpt-6-luna": 2
+   },
+   "distinct_tools": 31,
+   "kinds": {
+    "other": 399,
+    "command": 4043,
+    "file_change": 1934,
+    "network": 57,
+    "read": 27,
+    "delegation": 126
+   },
+   "typed_coverage": 0.9394169450349226,
+   "outcomes": {
+    "unknown": 4043,
+    "success": 2291,
+    "failure": 252
+   },
+   "outcome_determinacy": 0.3861220771333131,
+   "failure_rate_of_determinate": 0.09909555642941408,
+   "file_changes": 1934,
+   "diff_sources": {
+    "agent_patch": 1934
+   },
+   "file_ops": {
+    "delete": 107,
+    "create": 438,
+    "update": 1389
+   },
+   "lines_added": 52687,
+   "lines_removed": 7945,
+   "code_mode": {
+    "codemode_scripts": 4102,
+    "codemode_inner_calls": 4328,
+    "codemode_unresolved": 120,
+    "stdin_polls_folded": 365,
+    "propagated_redactions": 0
+   },
+   "via_code_mode_events": 3773,
+   "code_mode_unknown": 3523,
+   "rules": {
+    "R8": 173,
+    "R7": 126,
+    "R9": 93,
+    "R11": 22,
+    "R5": 20,
+    "R6": 19,
+    "R10": 13,
+    "R1": 10
+   },
+   "flagged_events": 465,
+   "high_risk_events": 42,
+   "sessions_with_any_flag": 15,
+   "raw_bytes": 312050570,
+   "html_bytes": 23622284,
+   "size_ratio_median_logs_over_50KB": 0.03015620727372163
+  },
+  "OR": {
+   "sessions": 33,
+   "sessions_with_events": 28,
+   "events": 1457,
+   "events_per_session_median": 30,
+   "events_per_session_max": 318,
+   "user_turns_total": 275,
+   "date_range": [
+    "2026-11-16",
+    "2026-11-19"
+   ],
+   "agent_versions": [
+    "2.1.136",
+    "2.1.325"
+   ],
+   "models": {
+    "claude-opus-5-5": 28,
+    "claude-sonnet-5": 13
+   },
+   "distinct_tools": 46,
+   "kinds": {
+    "command": 380,
+    "other": 859,
+    "network": 94,
+    "file_change": 81,
+    "read": 33,
+    "delegation": 10
+   },
+   "typed_coverage": 0.4104323953328758,
+   "outcomes": {
+    "success": 1332,
+    "failure": 70,
+    "unknown": 55
+   },
+   "outcome_determinacy": 0.9622512010981469,
+   "failure_rate_of_determinate": 0.04992867332382311,
+   "file_changes": 81,
+   "diff_sources": {
+    "agent_structured_patch": 55,
+    "reconstructed_from_input": 26
+   },
+   "file_ops": {
+    "create": 17,
+    "edit": 47,
+    "write": 6,
+    "update": 11
+   },
+   "lines_added": 3638,
+   "lines_removed": 115,
+   "code_mode": {
+    "propagated_redactions": 0
+   },
+   "via_code_mode_events": 0,
+   "code_mode_unknown": 0,
+   "rules": {
+    "R9": 28,
+    "R1": 7,
+    "R6": 6
+   },
+   "flagged_events": 39,
+   "high_risk_events": 7,
+   "sessions_with_any_flag": 9,
+   "raw_bytes": 49196338,
+   "html_bytes": 4105108,
+   "size_ratio_median_logs_over_50KB": 0.06920737612939727
+  }
+ },
+ "performance_single_run": {
+  "sessions": 97,
+  "convert_ms_median": 17.007166999995604,
+  "convert_ms_max": 1793.2465829999983,
+  "verify_ms_median": 0.975332999999523,
+  "verify_ms_max": 109.04391700000104,
+  "ms_per_MB": 8.235860305550016,
+  "pearson_r": 0.9221022181157412,
+  "largest_log_MB": 244.537189,
+  "sign_ms_median": 9.47587499999969,
+  "sig_verify_ms_median": 8.995645500004201,
+  "signed_and_verified": 76,
+  "signed_attempts": 76
+ },
+ "tamper_naive": {
+  "flip_outcome": {
+   "trials": 228,
+   "detected": 228
+  },
+  "drop_flags": {
+   "trials": 228,
+   "detected": 228
+  },
+  "edit_content": {
+   "trials": 228,
+   "detected": 228
+  },
+  "edit_timestamp": {
+   "trials": 228,
+   "detected": 228
+  },
+  "delete_event": {
+   "trials": 228,
+   "detected": 228
+  },
+  "insert_event": {
+   "trials": 228,
+   "detected": 228
+  },
+  "reorder": {
+   "trials": 228,
+   "detected": 228
+  },
+  "truncate_tail": {
+   "trials": 228,
+   "detected": 228
+  },
+  "edit_summary": {
+   "trials": 228,
+   "detected": 228
+  },
+  "edit_session_meta": {
+   "trials": 228,
+   "detected": 228
+  }
+ },
+ "tamper_naive_total": {
+  "trials": 2280,
+  "detected": 2280
+ },
+ "tamper_adaptive": {
+  "trials": 304,
+  "pass_integrity": 304,
+  "pass_signature": 0
+ },
+ "redaction_real_logs": {
+  "sessions_with_provider_secrets": 5,
+  "distinct_secret_strings": 6,
+  "leaked_into_artifact": 0
+ },
+ "timing_benchmark": {
+  "sessions": 79,
+  "repeats": 3,
+  "convert_ms_median": 23.34412500000127,
+  "convert_ms_max": 1787.980709000001,
+  "verify_ms_median": 1.0823340000030157,
+  "verify_ms_max": 110.21933299999986,
+  "ms_per_MB_slope": 8.09454740629587,
+  "intercept_ms": 35.380053936422414,
+  "pearson_r": 0.9215890848803092,
+  "largest_MB": 244.537189,
+  "throughput_MB_per_s_largest": 136.76724126222095
+ },
+ "seeded_redaction_test": {
+  "trials_per_family": 20,
+  "families": {
+   "private_key_block": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "aws_access_key": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "github_token": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "github_fine_grained": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "anthropic_key": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "openai_key": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "stripe_key": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "slack_token": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "google_api_key": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "jwt": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "bearer_header": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "url_credentials": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "assigned_secret": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "json_token_field": {
+    "injections": 160,
+    "leaked_events": 0,
+    "events_flagged_R5": 160
+   },
+   "propagated_bare_reuse": {
+    "injections": 20,
+    "leaked_events": 0,
+    "events_flagged_R5": null
+   }
+  },
+  "total_injections": 2260,
+  "total_leaks": 0,
+  "benign_strings": 25,
+  "benign_wrongly_redacted": []
+ },
+ "diff_fidelity_claude_code": {
+  "sessions": 12,
+  "v01_added": 35794,
+  "v01_removed": 241,
+  "v02_added": 34406,
+  "v02_removed": 2821,
+  "events": 499,
+  "events_with_different_counts": 106,
+  "diff_from_agent_patch": 363,
+  "ops": {
+   "Write/update": 46,
+   "Write/create": 259,
+   "Write/write": 85,
+   "Edit/update": 39,
+   "Edit/edit": 70
+  }
+ },
+ "risk_flag_annotation": {
+  "per_rule": {
+   "R1": {
+    "n": 25,
+    "population": 138,
+    "correct": 20,
+    "precision": 0.8,
+    "ci": [
+     0.6086866446346177,
+     0.9113954589934752
+    ],
+    "review_worthy": 2,
+    "rw_rate": 0.08,
+    "rw_ci": [
+     0.02221993369109193,
+     0.24966512122957818
+    ]
+   },
+   "R2": {
+    "n": 6,
+    "population": 6,
+    "correct": 6,
+    "precision": 1.0,
+    "ci": [
+     0.6096569663469354,
+     0.9999999999999999
+    ],
+    "review_worthy": 3,
+    "rw_rate": 0.5,
+    "rw_ci": [
+     0.18761280689940868,
+     0.8123871931005913
+    ]
+   },
+   "R5": {
+    "n": 19,
+    "population": 19,
+    "correct": 11,
+    "precision": 0.5789473684210527,
+    "ci": [
+     0.36275551465160105,
+     0.7685837960796962
+    ],
+    "review_worthy": 9,
+    "rw_rate": 0.47368421052631576,
+    "rw_ci": [
+     0.27329505487448547,
+     0.6829251748817489
+    ]
+   },
+   "R6": {
+    "n": 25,
+    "population": 53,
+    "correct": 8,
+    "precision": 0.32,
+    "ci": [
+     0.17204987516891143,
+     0.5159008626542329
+    ],
+    "review_worthy": 1,
+    "rw_rate": 0.04,
+    "rw_ci": [
+     0.007096050386699165,
+     0.19544472405022525
+    ]
+   },
+   "R7": {
+    "n": 25,
+    "population": 547,
+    "correct": 11,
+    "precision": 0.44,
+    "ci": [
+     0.2666537494700256,
+     0.6293298298043557
+    ],
+    "review_worthy": 0,
+    "rw_rate": 0.0,
+    "rw_ci": [
+     0.0,
+     0.13319649395317873
+    ]
+   },
+   "R8": {
+    "n": 25,
+    "population": 367,
+    "correct": 23,
+    "precision": 0.92,
+    "ci": [
+     0.7503348787704218,
+     0.977780066308908
+    ],
+    "review_worthy": 23,
+    "rw_rate": 0.92,
+    "rw_ci": [
+     0.7503348787704218,
+     0.977780066308908
+    ]
+   },
+   "R9": {
+    "n": 25,
+    "population": 273,
+    "correct": 25,
+    "precision": 1.0,
+    "ci": [
+     0.8668035060468213,
+     1.0
+    ],
+    "review_worthy": 2,
+    "rw_rate": 0.08,
+    "rw_ci": [
+     0.02221993369109193,
+     0.24966512122957818
+    ]
+   },
+   "R10": {
+    "n": 13,
+    "population": 13,
+    "correct": 2,
+    "precision": 0.15384615384615385,
+    "ci": [
+     0.04325726318273798,
+     0.4223517050863101
+    ],
+    "review_worthy": 0,
+    "rw_rate": 0.0,
+    "rw_ci": [
+     0.0,
+     0.22810184305529166
+    ]
+   },
+   "R11": {
+    "n": 22,
+    "population": 22,
+    "correct": 22,
+    "precision": 1.0,
+    "ci": [
+     0.8513404742740388,
+     1.0
+    ],
+    "review_worthy": 1,
+    "rw_rate": 0.045454545454545456,
+    "rw_ci": [
+     0.008069219301147859,
+     0.21798489499518053
+    ]
+   }
+  },
+  "weighted_precision": 0.709095966620306,
+  "weighted_review_worthy": 0.2681780250347705,
+  "unflagged": {
+   "n": 150,
+   "missed": 2,
+   "missed_ci": [
+    0.0036640523882232115,
+    0.047307856380276334
+   ],
+   "review_worthy": 2
+  },
+  "agreement": {
+   "correct": [
+    0.978,
+    0.948
+   ],
+   "rw_flagged": [
+    0.951,
+    0.847
+   ],
+   "rw_unflagged": [
+    0.993,
+    0.664
+   ]
+  },
+  "disagreements": 14,
+  "note": "Labels by two LLM annotators plus an LLM adjudicator; rules frozen at v0.2.0. Agreement values are [raw agreement, Cohen's kappa]."
+ }
+}
