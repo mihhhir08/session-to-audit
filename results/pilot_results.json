@@ -1,0 +1,113 @@
+{
+ "sessions": 12,
+ "sessions_with_events": 10,
+ "per_session": {
+  "events": {
+   "sum": 5608,
+   "median": 101.5,
+   "min": 0,
+   "max": 2522
+  },
+  "commands": {
+   "sum": 3262,
+   "median": 73.0,
+   "min": 0,
+   "max": 1041
+  },
+  "file_changes": {
+   "sum": 499,
+   "median": 6.5,
+   "min": 0,
+   "max": 256
+  },
+  "files_touched": {
+   "sum": 283,
+   "median": 4.0,
+   "min": 0,
+   "max": 117
+  },
+  "lines_added": {
+   "sum": 35794,
+   "median": 631.0,
+   "min": 0,
+   "max": 16610
+  },
+  "lines_removed": {
+   "sum": 241,
+   "median": 3.0,
+   "min": 0,
+   "max": 106
+  },
+  "failures": {
+   "sum": 141,
+   "median": 3.0,
+   "min": 0,
+   "max": 71
+  },
+  "risk_flags": {
+   "sum": 953,
+   "median": 19.5,
+   "min": 0,
+   "max": 420
+  },
+  "high_risk_events": {
+   "sum": 128,
+   "median": 2.0,
+   "min": 0,
+   "max": 75
+  },
+  "user_turns": {
+   "sum": 740,
+   "median": 11.5,
+   "min": 0,
+   "max": 335
+  },
+  "raw_bytes": {
+   "sum": 491929283,
+   "median": 6891563.5,
+   "min": 100,
+   "max": 244537189
+  },
+  "html_bytes": {
+   "sum": 20805520,
+   "median": 490246.5,
+   "min": 2667,
+   "max": 8653788
+  },
+  "convert_ms": {
+   "sum": 2483.035503,
+   "median": 46.03583349999991,
+   "min": 0.3429999999999822,
+   "max": 1090.2237089999999
+  },
+  "verify_ms": {
+   "sum": 268.9048770000008,
+   "median": 5.9471670000000305,
+   "min": 0.05937500000019469,
+   "max": 113.96466699999985
+  }
+ },
+ "all_verified": true,
+ "typed_coverage": 0.8651925820256776,
+ "size_ratio_median": 0.05500076705198119,
+ "failure_rate_overall": 0.02514265335235378,
+ "kinds": {
+  "command": 3262,
+  "other": 756,
+  "read": 965,
+  "file_change": 499,
+  "network": 126
+ },
+ "rules": {
+  "R7 dependency_install": 427,
+  "R8 publish_or_deploy": 217,
+  "R9 out_of_workspace_write": 152,
+  "R1 destructive_fs": 122,
+  "R6 network_egress": 29,
+  "R2 vcs_history_rewrite": 6
+ },
+ "tamper": {
+  "trials": 200,
+  "detected": 200
+ }
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+# never commit real session logs or generated artifacts from them
+*.jsonl
+!examples/demo_session.jsonl
+out/
+artifacts/
